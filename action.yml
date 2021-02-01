@@ -9,6 +9,8 @@ inputs:
     description: "The root URL of the website you wish to crawl"
     required: true
     default: "https://..."
+  cmd_params:
+    description: "Command line parameters for URL checker"
 outputs:
   result:
     description: "A Report of all broken links"

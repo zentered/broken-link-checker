@@ -1,6 +1,8 @@
 #!/bin/sh 
+
 set -euo
 
 go get -u github.com/raviqqe/muffet
 
-muffet -t 30 $1
+echo "muffet ${INPUT_CMD_PARAMS} ${INPUT_URL}"
+muffet ${INPUT_CMD_PARAMS} ${INPUT_URL}

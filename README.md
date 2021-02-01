@@ -19,9 +19,10 @@ broken_link_checker_job:
   runs-on: ubuntu-latest
   name: Check for broken links
   steps:
-  - name: Check for broken links
-    id: link-report
-    uses: elliotforbes/broken-link-checker@1.0.2
-    with:
-      url: 'https://tutorialedge.net'
+    - name: Check for broken links
+      id: link-report
+      uses: elliotforbes/broken-link-checker@1.0.2
+      with:
+        url: "https://tutorialedge.net"
+        cmd_params: "--exclude=google.com --buffer-size=8192 --max-connections=10 --color=always --verbose"
 ```
